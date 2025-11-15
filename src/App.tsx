@@ -15,9 +15,10 @@ import NotFound from "./pages/NotFound";
 import Layout from "./layout/Layout";
 import RoleModal from "./components/RoleModal";
 import TermsPage from "./pages/TermsPage";
-import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import AdminLogin from "./pages/AdminLogin";
 import ScrollToTop from "./components/ScrollToTop";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import DeleteAccount from "./pages/DeleteAccount";
 
 const queryClient = new QueryClient();
 
@@ -38,7 +39,8 @@ const App = () => (
             <Route path="/artist" element={<Artist />} />
             <Route path="/user" element={<User />} />
             <Route path="/terms" element={<TermsPage />} />
-            <Route path="/privacy" element={<PrivacyPolicyPage />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/delete" element={<DeleteAccount />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/adminLogin" element={<AdminLogin />} />
           </Route>
