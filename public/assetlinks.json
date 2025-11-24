@@ -1,9 +1,12 @@
 [
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.gigvala.scenezone", 
+      "package_name": "com.gigvala.scenezone",
       "sha256_cert_fingerprints": [
         "C1:88:16:48:9E:A5:3E:8C:9A:E3:6E:48:BF:BB:BD:A0:87:6D:0B:84:D6:F5:AE:ED:8E:1B:8A:6A:24:F0:39:EC"
       ]
