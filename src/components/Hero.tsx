@@ -127,7 +127,7 @@ const Hero: React.FC = () => {
                   />
                 </motion.a>
                 <motion.a
-                  href="https://play.google.com/store" // Replace with actual Google Play URL
+                  href="https://play.google.com/store/apps/details?id=com.gigvala.scenezone&pcampaignid=web_share" // Replace with actual Google Play URL
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Get it on Google Play"
