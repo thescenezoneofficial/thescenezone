@@ -110,28 +110,26 @@ const Header = () => {
                   </NavLink>
                 ))}
 
-                <Link to="/adminLogin" onClick={() => setIsOpen(false)}>
+                <a href="https://admin.scenezone.in/">
                   <Button
-                    onClick={(e) => navigate("/adminLogin")}
                     className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-0 w-full mt-6 rounded-md"
                   >
                     Admin Login
                   </Button>
-                </Link>
+                </a>
               </div>
             </div>
           )}
         </nav>
 
         {/* Login button for desktop */}
-        <div className="hidden md:block">
+        <a href="https://admin.scenezone.in/" className="hidden md:block">
           <Button
-            onClick={() => navigate("/adminLogin")}
             className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-0"
           >
             Admin Login
           </Button>
-        </div>
+        </a>
       </div>
     </header>
   );
