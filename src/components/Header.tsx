@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "@/assets/icons/footerlogo.png";
 import { IoMdClose } from "react-icons/io";
 
 const Header = () => {
-  const navigate = useNavigate();
   const navItems = [
     { name: "HOME", path: "/" },
     { name: "ABOUT", path: "/about" },
@@ -110,26 +109,20 @@ const Header = () => {
                   </NavLink>
                 ))}
 
-                <a href="https://admin.scenezone.in/">
-                  <Button
-                    className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-0 w-full mt-6 rounded-md"
-                  >
-                    Admin Login
-                  </Button>
-                </a>
+                <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-0 w-full mt-6 rounded-md">
+                  <a href="https://admin.scenezone.in/">Admin Login</a>
+                </Button>
               </div>
             </div>
           )}
         </nav>
 
         {/* Login button for desktop */}
-        <a href="https://admin.scenezone.in/" className="hidden md:block">
-          <Button
-            className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-0"
-          >
+        <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-0 hidden md:block">
+          <a href="https://admin.scenezone.in/" className="">
             Admin Login
-          </Button>
-        </a>
+          </a>
+        </Button>
       </div>
     </header>
   );
